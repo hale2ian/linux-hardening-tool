@@ -1,0 +1,81 @@
+# Filename: ModuleBash_Checklist
+# Title: linux-hardening-tool module/bash script checklist
+# Author: Jean Ian Panganiban
+# Date: 20250630
+# Description: This contains checklists for manual verification of the bash scripts located in $HOME/linux-hardening-tool
+
+# For SSH module
+# [ ] Check logs. It should show that the hardening started and completed.
+sudo cat ~/linux-hardening-tool/logs/ssh_hardening_<timestamp>.log
+# [ ] Check SSH service. It should show "active/running".
+sudo systemctl status ssh
+# [ ] Check sshd_config backup file. It should show a file starting with "sshd_config.bak"
+sudo ls -lh /etc/ssh/sshd_config.bak.*
+# [ ] Check SSH port. It should show it is listening on "2222".
+sudo ss -tulpn | head -1 ; sudo ss -tulpn | grep ssh
+# [ ] Check sshd_config settings. It should show: "Port 2222", "PermitRootLogin no", "PasswordAuthentication no".
+sudo grep -E "^Port|^PermitRootLogin|^PasswordAuthentication" /etc/ssh/sshd_config
+# [ ] Check local firewall rules. It should show port 2222 is allowed.
+sudo ufw status || sudo firewall-cmd --list-all
+# [ ] Check SSH connectivity. Connect via SSH to the server if successful.
+ssh -p 2222 admin@localhost
+# [ ] Check remote root login. It should show "permission denied"
+
+# For firewall module
+# [ ] Check logs. It should show that the hardening started and completed.
+sudo cat ~/linux-hardening-tool/logs/firewall_hardening_<timestamp>.log
+# [ ] Check which firewall tool used. 
+if command -v ufw;
+	then echo "Using UFW";
+elif command -v firewall-cmd;
+	then echo "Using firewalld";
+elif command -v iptables;
+	then echo "Using iptables";
+else
+	echo "No supported firewall found."
+fi
+# [ ] Check firewall status and rules. It should show status is active and the rules.
+sudo ufw status verbose
+sudo firewall-cmd --list-all
+sudo iptables -L -n -v
+
+# For service cleanup module
+# [ ] Check logs. It should show that the hardening started and completed.
+sudo cat ~/linux-hardening-tool/logs/service_cleanup_<timestamp>.log
+# [ ] Check list of enabled services
+systemctl list-unit-files --state=enabled
+# [ ] Check status of the disabled services
+sudo systemctl status telnet
+sudo systemctl status ftp
+sudo systemctl status rsh
+sudo systemctl status rlogin
+sudo systemctl status rexec
+sudo systemctl status tftp
+sudo systemctl status nfs-server
+sudo systemctl status rpcbind
+sudo systemctl status cups
+sudo systemctl status avahi-daemon
+# [ ] Check if disabled services can be enabled again
+sudo systemctl start telnet
+
+# For file permissions module
+# [ ] Check logs. It should show that the hardening started and completed.
+sudo cat ~/linux-hardening-tool/logs/file_permissions_<timestamp>.log
+# [ ] Check the permissions and ownerships of the files.
+sudo ls -l /etc/passwd /etc/shadow /etc/group /etc/gshadow
+sudo ls -l /etc/ssh/sshd_config
+sudo ls -ld /etc/ssh
+sudo ls -l /etc/ssh/ssh_host_*
+sudo ls -l /boot/grub2/grub.cfg /boot/grub/grub.cfg
+sudo ls -ld /root /root/.ssh
+sudo ls -l /root/.ssh/authorized_keys
+sudo ls -l /etc/crontab
+sudo ls -ld /etc/cron.*
+sudo ls -l /etc/sudoers
+sudo ls -ld /etc/sudoers.d
+sudo ls -l /etc/sudoers.d/*
+sudo ls -l /etc/fstab
+sudo ls -ld /etc/pam.d
+sudo ls -l /etc/pam.d/*
+sudo ls -ld /var/log
+sudo ls -l /var/log/auth.log /var/log/secure
