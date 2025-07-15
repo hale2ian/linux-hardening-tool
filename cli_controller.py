@@ -11,7 +11,6 @@ Description: Allows modular execution of hardening and audit modules via an inte
 import os
 import subprocess
 import sys
-import datetime
 
 BASE_DIR = os.path.expanduser("~/linux-hardening-tool")
 SCRIPTS_DIR = os.path.join(BASE_DIR, "bash-scripts")
@@ -72,7 +71,11 @@ def main_menu():
         elif choice == '4':
             run_script("filepermissions_hardening.sh")
         elif choice == '5':
-            run_script("audit_generate.sh")
+            scan_type = input("Enter scan type (pre/post): ").strip().lower()
+            if scan_type in ["pre", "post"]:
+                subprocess.run(["sudo", os.path.join(SCRIPTS_DIR, "audit_generate.sh"), scan_type], check=True)
+            else:
+                print("[!] Invalid scan type. Skipping execution.\n")
         elif choice == '6':
             compare_reports()
         elif choice == '7':

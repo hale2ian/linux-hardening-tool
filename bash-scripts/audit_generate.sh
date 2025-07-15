@@ -6,22 +6,28 @@
 # Author: Jean Ian Panganiban
 # Date: 20250708
 
-set -e
-
-REPORT_DIR="$HOME/linux-hardening-tool/reports"
-LOG_DIR="$HOME/linux-hardening-tool/logs"
-REPORT_FILE="$REPORT_DIR/lynis_${SCAN_TYPE}_hardening_${TIMESTAMP}.txt"
-LOG_FILE="$LOG_DIR/lynis_${SCAN_TYPE}_hardening_${TIMESTAMP}.log"
+# === Determine correct user home directory ===
+if [ "$SUDO_USER" ]; then
+    USER_HOME=$(eval echo "~$SUDO_USER")
+else
+    USER_HOME="$HOME"
+fi
 
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+REPORT_DIR="$USER_HOME/linux-hardening-tool/reports"
+LOG_DIR="$USER_HOME/linux-hardening-tool/logs"
+REPORT_FILE="$REPORT_DIR/lynis_${SCAN_TYPE}_hardening_${TIMESTAMP}.txt"
+LOG_FILE="$LOG_DIR/lynis_${SCAN_TYPE}_hardening_${TIMESTAMP}.log"
+mkdir -p "$REPORT_DIR" "$LOG_DIR"
 
 echo "=== Audit Report Generation Started at $(date) ===" | tee -a "$LOG_FILE"
+
+echo "[*] Using user home directory: $USER_HOME" | tee -a "$LOG_FILE"
 
 if [ -f /etc/os-release ]; then
     . /etc/os-release
     echo "[*] Detected OS: $NAME $VERSION" | tee -a "$LOG_FILE"
 fi
-
 
 # Check if Lynis is installed
 if ! command -v lynis >/dev/null 2>&1; then
@@ -57,17 +63,22 @@ if ! command -v bc >/dev/null 2>&1; then
     fi
 fi
 
-# Prompt for scan type
-read -pr "Is this a pre-hardening or post-hardening scan? (pre/post): " SCAN_TYPE
+# Accept scan type as an argument
+SCAN_TYPE="$1"
 SCAN_TYPE=$(echo "$SCAN_TYPE" | tr '[:upper:]' '[:lower:]')
 
 if [ "$SCAN_TYPE" != "pre" ] && [ "$SCAN_TYPE" != "post" ]; then
-    echo "[!] Invalid scan type. Use 'pre' or 'post'." | tee -a "$LOG_FILE"
+    echo "[!] Invalid or missing scan type. Usage: $0 pre|post" | tee -a "$LOG_FILE"
     exit 1
 fi
 
 echo "[*] Running Lynis system audit..." | tee -a "$LOG_FILE"
 sudo lynis audit system --report-file "$REPORT_FILE" | tee -a "$LOG_FILE"
+
+# Fix ownership of the report and log files
+if [ "$SUDO_USER" ]; then
+    sudo chown "$SUDO_USER:$SUDO_USER" "$REPORT_FILE"
+fi
 
 # Extract and record hardening index
 HARDENING_INDEX=$(grep -i "hardening_index" "$REPORT_FILE" | awk -F'=' '{print $2}')

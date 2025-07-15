@@ -8,13 +8,23 @@
 
 set -e
 
-LOG_FILE="$HOME/linux-hardening-tool/logs/ssh_hardening_$(date +%Y%m%d_%H%M%S).log"
+# Determine user home directory for logs
+if [ "$SUDO_USER" ]; then
+    USER_HOME=$(eval echo "~$SUDO_USER")
+else
+    USER_HOME="$HOME"
+fi
+
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+LOG_DIR="$USER_HOME/linux-hardening-tool/logs"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/ssh_hardening_${TIMESTAMP}.log"
 
 echo "=== SSH Hardening Started at $(date) ===" | tee -a "$LOG_FILE"
 
 # Backup SSH configuration
 SSH_CONFIG="/etc/ssh/sshd_config"
-BACKUP_CONFIG="/etc/ssh/sshd_config.bak.$(date +%Y%m%d_%H%M%S)"
+BACKUP_CONFIG="/etc/ssh/sshd_config.bak.${TIMESTAMP}"
 echo "[*] Backing up SSH configuration to $BACKUP_CONFIG" | tee -a "$LOG_FILE"
 sudo cp "$SSH_CONFIG" "$BACKUP_CONFIG"
 
@@ -33,6 +43,25 @@ NEW_PORT=2222
 echo "[*] Changing SSH port to $NEW_PORT..." | tee -a "$LOG_FILE"
 sudo sed -i "s/^#Port .*/Port $NEW_PORT/" "$SSH_CONFIG"
 sudo sed -i "s/^Port .*/Port $NEW_PORT/" "$SSH_CONFIG"
+
+# Lynis SSH Recommendations:
+echo "[*] Applying Lynis SSH recommendations..." | tee -a "$LOG_FILE"
+echo "[*] Changing AllowTcpForwarding to no..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?AllowTcpForwarding.*/AllowTcpForwarding no/' "$SSH_CONFIG" || echo "AllowTcpForwarding no" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing ClientAliveCountMax to 2..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?ClientAliveCountMax.*/ClientAliveCountMax 2/' "$SSH_CONFIG" || echo "ClientAliveCountMax 2" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing LogLevel to VERBOSE..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?LogLevel.*/LogLevel VERBOSE/' "$SSH_CONFIG" || echo "LogLevel VERBOSE" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing MaxAuthTries to 3..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?MaxAuthTries.*/MaxAuthTries 3/' "$SSH_CONFIG" || echo "MaxAuthTries 3" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing MaxSessions to 2..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?MaxSessions.*/MaxSessions 2/' "$SSH_CONFIG" || echo "MaxSessions 2" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing TCPKeepAlive to no..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?TCPKeepAlive.*/TCPKeepAlive no/' "$SSH_CONFIG" || echo "TCPKeepAlive no" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing X11Forwarding to no..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?X11Forwarding.*/X11Forwarding no/' "$SSH_CONFIG" || echo "X11Forwarding no" | sudo tee -a "$SSH_CONFIG"
+echo "[*] Changing AllowAgentForwarding to no..." | tee -a "$LOG_FILE"
+sudo sed -i 's/^#\?AllowAgentForwarding.*/AllowAgentForwarding no/' "$SSH_CONFIG" || echo "AllowAgentForwarding no" | sudo tee -a "$SSH_CONFIG"
 
 # Check AppArmor (OpenSUSE) if installed for info logging
 if command -v aa-status >/dev/null 2>&1 || [ -x /usr/sbin/aa-status ]; then

@@ -8,9 +8,18 @@
 
 set -e
 
-LOG_DIR="$HOME/linux-hardening-tool/logs"
+# === Determine correct user home directory ===
+if [ "$SUDO_USER" ]; then
+    USER_HOME=$(eval echo "~$SUDO_USER")
+else
+    USER_HOME="$HOME"
+fi
+
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+REPORT_DIR="$USER_HOME/linux-hardening-tool/reports"
+LOG_DIR="$USER_HOME/linux-hardening-tool/logs"
 LOG_FILE="$LOG_DIR/compare_audit_reports_${TIMESTAMP}.log"
+mkdir -p "$LOG_DIR"
 
 echo "=== Audit Report Comparison Started at $(date) ===" | tee -a "$LOG_FILE"
 
@@ -36,6 +45,7 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
+# Accept input files
 PRE_FILE="$1"
 POST_FILE="$2"
 
