@@ -44,7 +44,7 @@ echo "[*] Changing SSH port to $NEW_PORT..." | tee -a "$LOG_FILE"
 sudo sed -i "s/^#Port .*/Port $NEW_PORT/" "$SSH_CONFIG"
 sudo sed -i "s/^Port .*/Port $NEW_PORT/" "$SSH_CONFIG"
 
-# Lynis SSH Recommendations:
+# Lynis SSH Recommendations
 echo "[*] Applying Lynis SSH recommendations..." | tee -a "$LOG_FILE"
 echo "[*] Changing AllowTcpForwarding to no..." | tee -a "$LOG_FILE"
 sudo sed -i 's/^#\?AllowTcpForwarding.*/AllowTcpForwarding no/' "$SSH_CONFIG" || echo "AllowTcpForwarding no" | sudo tee -a "$SSH_CONFIG"

@@ -57,10 +57,13 @@ def main_menu():
         print("2) Run Firewall Module")
         print("3) Run Service Cleanup Module")
         print("4) Run File Permissions Module")
-        print("5) Run Generate Lynis Report Module")
-        print("6) Run Compare Lynis Reports Module")
-        print("7) Exit")
-        choice = input("Select an option (1-7): ").strip()
+        print("5) Run Kernel Hardening Module")
+        print("6) Run System Audit (auditd) Module")
+        print("7) Run System Update Module")
+        print("8) Run Generate Lynis Report Module")
+        print("9) Run Compare Lynis Reports Module")
+        print("10) Exit")
+        choice = input("Select an option (1-10): ").strip()
 
         if choice == '1':
             run_script("ssh_hardening.sh")
@@ -71,14 +74,20 @@ def main_menu():
         elif choice == '4':
             run_script("filepermissions_hardening.sh")
         elif choice == '5':
+            run_script("kernel_hardening.sh")
+        elif choice == '6':
+            run_script("auditd_configure.sh")
+        elif choice == '7':
+            run_script("update_system.sh")
+        elif choice == '8':
             scan_type = input("Enter scan type (pre/post): ").strip().lower()
             if scan_type in ["pre", "post"]:
                 subprocess.run(["sudo", os.path.join(SCRIPTS_DIR, "audit_generate.sh"), scan_type], check=True)
             else:
                 print("[!] Invalid scan type. Skipping execution.\n")
-        elif choice == '6':
+        elif choice == '9':
             compare_reports()
-        elif choice == '7':
+        elif choice == '10':
             print("Exiting Linux Hardening Tool CLI Controller.")
             sys.exit(0)
         else:

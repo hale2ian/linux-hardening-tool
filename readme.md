@@ -1,7 +1,7 @@
 # Linux Hardening Tool
 
 ## Overview
-This project is developed as part of **COMP902 - Advanced Information Technology Specialised Project**.
+This project is developed as part of **COMP902 Advanced Information Technology Specialised Project May-Aug 2025**.
 
 It automates Linux server hardening using modular Bash scripts and a Python CLI controller, covering:
 - SSH Hardening
@@ -9,6 +9,17 @@ It automates Linux server hardening using modular Bash scripts and a Python CLI 
 - Service Cleanup
 - File Permissions Hardening
 - Pre/Post Hardening Audits with Lynis
+
+## Requirements
+- Python/Python3
+- Lynis
+- Bash
+
+## Compatibility
+Ran and tested on the following Linux distributions:
+- Ubuntu 25.04
+- CentOS 9
+- OpenSUSE 15.6
 
 ## Structure
 - `bash-scripts/`: Contains modular hardening Bash scripts.

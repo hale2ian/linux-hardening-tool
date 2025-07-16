@@ -9,7 +9,15 @@
 
 set -e
 
-LOG_FILE="$HOME/linux-hardening-tool/logs/file_permissions_$(date +%Y%m%d_%H%M%S).log"
+# Determine user home directory for logs
+if [ "$SUDO_USER" ]; then
+    USER_HOME=$(eval echo "~$SUDO_USER")
+else
+    USER_HOME="$HOME"
+fi
+
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+LOG_FILE="$USER_HOME/linux-hardening-tool/logs/file_permissions_${TIMESTAMP}.log"
 
 echo "=== File Permissions Hardening Started at $(date) ===" | tee -a "$LOG_FILE"
 
