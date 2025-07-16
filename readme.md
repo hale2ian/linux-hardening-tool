@@ -8,7 +8,10 @@ It automates Linux server hardening using modular Bash scripts and a Python CLI 
 - Firewall Configuration
 - Service Cleanup
 - File Permissions Hardening
-- Pre/Post Hardening Audits with Lynis
+- Kernel Hardening
+- System Audit (auditd) Configuration
+- System Update
+- Pre/Post Hardening Audit Scans with Lynis
 
 ## Requirements
 - Python/Python3
