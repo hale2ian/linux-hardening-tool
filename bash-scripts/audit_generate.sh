@@ -13,6 +13,15 @@ else
     USER_HOME="$HOME"
 fi
 
+# Accept scan type as an argument
+SCAN_TYPE="$1"
+SCAN_TYPE=$(echo "$SCAN_TYPE" | tr '[:upper:]' '[:lower:]')
+
+if [ "$SCAN_TYPE" != "pre" ] && [ "$SCAN_TYPE" != "post" ]; then
+    echo "[!] Invalid or missing scan type. Usage: $0 pre|post"
+    exit 1
+fi
+
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 REPORT_DIR="$USER_HOME/linux-hardening-tool/reports"
 LOG_DIR="$USER_HOME/linux-hardening-tool/logs"
@@ -61,15 +70,6 @@ if ! command -v bc >/dev/null 2>&1; then
         echo "[!] Unsupported distribution. Install bc manually." | tee -a "$LOG_FILE"
         exit 1
     fi
-fi
-
-# Accept scan type as an argument
-SCAN_TYPE="$1"
-SCAN_TYPE=$(echo "$SCAN_TYPE" | tr '[:upper:]' '[:lower:]')
-
-if [ "$SCAN_TYPE" != "pre" ] && [ "$SCAN_TYPE" != "post" ]; then
-    echo "[!] Invalid or missing scan type. Usage: $0 pre|post" | tee -a "$LOG_FILE"
-    exit 1
 fi
 
 echo "[*] Running Lynis system audit..." | tee -a "$LOG_FILE"

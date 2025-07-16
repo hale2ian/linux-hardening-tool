@@ -81,6 +81,24 @@ EOF
 
 echo "[*] Reloading auditd rules..." | tee -a "$LOG_FILE"
 sudo augenrules --load
-sudo systemctl restart auditd
+
+# Check if auditd is running
+if systemctl is-active --quiet auditd; then
+    echo "[*] auditd is running."
+else
+    echo "[*] auditd is not running. Attempting to start..."
+
+    if systemctl is-enabled --quiet auditd; then
+        if sudo systemctl start auditd 2>/dev/null; then
+            echo "[*] auditd started successfully."
+        else
+            echo "[!] Unable to start auditd manually due to system restrictions. Please reboot to apply auditd configuration."
+        fi
+    else
+        echo "[!] auditd is not enabled. Enabling now..."
+        sudo systemctl enable auditd
+        echo "[*] auditd enabled. Please reboot to start auditd with the new configuration."
+    fi
+fi
 
 echo "=== AuditD Setup Completed at $(date) ===" | tee -a "$LOG_FILE"
