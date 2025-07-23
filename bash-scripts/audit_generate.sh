@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Filename: audit_generate.sh
-# Title: Audit Report Generator 
+# Title: Generate Lynis Report Module
 # Description: Generates Lynis audit report and stores log.
 # Author: Jean Ian Panganiban
 # Date: 20250708

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Filename: audit_compare.sh
-# Title: Audit Report Comparison 
+# Title: Compare Lynis Reports Module
 # Description: Compares two Lynis reports (pre and post hardening) and outputs structured differences.
 # Author: Jean Ian Panganiban
 # Date: 20250708
