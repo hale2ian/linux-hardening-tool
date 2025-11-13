@@ -63,8 +63,9 @@ def main_menu():
         print("8) Run System Update Module")
         print("9) Run Generate Lynis Report Module")
         print("10) Run Compare Lynis Reports Module")
-        print("11) Exit")
-        choice = input("Select an option (1-11): ").strip()
+        print("11) Run ML-based Anomaly Detection (COMP903 Prototype)")
+        print("12) Exit")
+        choice = input("Select an option (1-12): ").strip()
 
         if choice == '1':
             run_script("ssh_hardening.sh")
@@ -91,6 +92,8 @@ def main_menu():
         elif choice == '10':
             compare_reports()
         elif choice == '11':
+            run_script("ml_anomaly_scan.sh")
+        elif choice == '12':
             print("Exiting Linux Hardening Tool CLI Controller.")
             sys.exit(0)
         else:

@@ -35,7 +35,7 @@ fi
 # Backup current kernel parameters
 SYSCTL_BACKUP_FILE="$LOG_DIR/sysctl_backup_${TIMESTAMP}.txt"
 echo "[*] Backing up current kernel parameters using 'sysctl -a' to $SYSCTL_BACKUP_FILE" | tee -a "$LOG_FILE"
-sudo sysctl -a > "$SYSCTL_BACKUP_FILE" 2>/dev/null
+sudo sysctl -a | sudo tee "$SYSCTL_BACKUP_FILE" 2>/dev/null
 
 # Apply recommended kernel hardening parameters
 echo "[*] Applying recommended kernel hardening parameters..." | tee -a "$LOG_FILE"

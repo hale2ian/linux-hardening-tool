@@ -1,0 +1,473 @@
+2025-07-24T07:42:07.643094+12:00 Ubuntu25 dbus-daemon[941]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-07-24T07:45:01.533937+12:00 Ubuntu25 CRON[4308]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T07:45:01.563817+12:00 Ubuntu25 CRON[4308]: pam_unix(cron:session): session closed for user root
+2025-07-24T07:55:01.348603+12:00 Ubuntu25 CRON[4347]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T07:55:01.400981+12:00 Ubuntu25 CRON[4347]: pam_unix(cron:session): session closed for user root
+2025-07-24T07:55:22.515147+12:00 Ubuntu25 sshd-session[4350]: Connection from 10.0.2.2 port 57398 on 10.0.2.15 port 2222 rdomain ""
+2025-07-24T07:55:22.679654+12:00 Ubuntu25 sshd-session[4350]: Accepted key ECDSA SHA256:Dt08AV3ugRtLZBKJ3d5YUO7z3uiotrLJaUM1ZrvzVaE found at /home/admin/.ssh/authorized_keys:1
+2025-07-24T07:55:22.686995+12:00 Ubuntu25 sshd-session[4350]: Postponed publickey for admin from 10.0.2.2 port 57398 ssh2 [preauth]
+2025-07-24T07:55:22.695897+12:00 Ubuntu25 sshd-session[4350]: Accepted key ECDSA SHA256:Dt08AV3ugRtLZBKJ3d5YUO7z3uiotrLJaUM1ZrvzVaE found at /home/admin/.ssh/authorized_keys:1
+2025-07-24T07:55:22.721486+12:00 Ubuntu25 sshd-session[4350]: Accepted publickey for admin from 10.0.2.2 port 57398 ssh2: ECDSA SHA256:Dt08AV3ugRtLZBKJ3d5YUO7z3uiotrLJaUM1ZrvzVaE
+2025-07-24T07:55:22.734312+12:00 Ubuntu25 sshd-session[4350]: pam_unix(sshd:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-07-24T07:55:22.869476+12:00 Ubuntu25 systemd-logind[1014]: New session 5 of user admin.
+2025-07-24T07:55:23.090441+12:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-07-24T07:55:23.108741+12:00 Ubuntu25 systemd-logind[1014]: New session 6 of user admin.
+2025-07-24T07:55:25.113037+12:00 Ubuntu25 sshd-session[4350]: User child is on pid 4485
+2025-07-24T07:55:25.162101+12:00 Ubuntu25 sshd-session[4485]: Starting session: shell on pts/0 for admin from 10.0.2.2 port 57398 id 0
+2025-07-24T08:05:01.968679+12:00 Ubuntu25 CRON[4621]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:05:02.274926+12:00 Ubuntu25 CRON[4621]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:15:02.271978+12:00 Ubuntu25 CRON[4648]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:15:02.376586+12:00 Ubuntu25 CRON[4648]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:17:01.482739+12:00 Ubuntu25 CRON[4655]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:17:01.685186+12:00 Ubuntu25 CRON[4655]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:25:01.974010+12:00 Ubuntu25 CRON[4671]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:25:02.087454+12:00 Ubuntu25 CRON[4671]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:30:01.220999+12:00 Ubuntu25 CRON[4683]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:30:01.279427+12:00 Ubuntu25 CRON[4683]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:35:01.400823+12:00 Ubuntu25 CRON[4695]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:35:01.416387+12:00 Ubuntu25 CRON[4695]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:45:01.282934+12:00 Ubuntu25 CRON[4712]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:45:01.392121+12:00 Ubuntu25 CRON[4712]: pam_unix(cron:session): session closed for user root
+2025-07-24T08:55:01.945287+12:00 Ubuntu25 CRON[4730]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T08:55:01.991462+12:00 Ubuntu25 CRON[4730]: pam_unix(cron:session): session closed for user root
+2025-07-24T09:05:01.458333+12:00 Ubuntu25 CRON[5032]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T09:05:01.498336+12:00 Ubuntu25 CRON[5032]: pam_unix(cron:session): session closed for user root
+2025-07-24T09:52:10.069510+12:00 Ubuntu25 CRON[5063]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T09:52:10.073893+12:00 Ubuntu25 CRON[5063]: pam_unix(cron:session): session closed for user root
+2025-07-24T09:52:20.622579+12:00 Ubuntu25 systemd-logind[5215]: New seat seat0.
+2025-07-24T09:52:20.714087+12:00 Ubuntu25 systemd-logind[5215]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-07-24T09:52:20.714326+12:00 Ubuntu25 systemd-logind[5215]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-07-24T09:52:20.722117+12:00 Ubuntu25 systemd-logind[5215]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-07-24T09:52:20.873370+12:00 Ubuntu25 systemd-logind[5215]: New session 1 of user gdm.
+2025-07-24T09:52:20.890742+12:00 Ubuntu25 systemd-logind[5215]: New session 6 of user admin.
+2025-07-24T09:52:20.895206+12:00 Ubuntu25 systemd-logind[5215]: New session 5 of user admin.
+2025-07-24T09:52:20.898542+12:00 Ubuntu25 systemd-logind[5215]: New session c1 of user gdm.
+2025-07-24T09:52:21.260583+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-07-24T09:52:21.300857+12:00 Ubuntu25 systemd-logind[5215]: New session c2 of user gdm.
+2025-07-24T09:52:29.947246+12:00 Ubuntu25 polkitd[966]: Registered Authentication Agent for unix-session:c2 (system bus name :1.101 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-07-24T09:52:37.025521+12:00 Ubuntu25 gnome-keyring-daemon[2548]: The Secret Service was already initialized
+2025-07-24T09:52:37.027251+12:00 Ubuntu25 gnome-keyring-daemon[5663]: discover_other_daemon: 1
+2025-07-24T09:55:01.562360+12:00 Ubuntu25 CRON[5694]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T09:55:01.675413+12:00 Ubuntu25 CRON[5694]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:05:01.760432+12:00 Ubuntu25 CRON[5715]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:05:01.860279+12:00 Ubuntu25 CRON[5715]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:15:01.964376+12:00 Ubuntu25 CRON[5738]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:15:02.038867+12:00 Ubuntu25 CRON[5738]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:17:01.113554+12:00 Ubuntu25 CRON[5743]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:17:01.207719+12:00 Ubuntu25 CRON[5743]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:25:01.385620+12:00 Ubuntu25 CRON[5760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:25:01.479087+12:00 Ubuntu25 CRON[5760]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:30:01.597083+12:00 Ubuntu25 CRON[5767]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:30:01.646841+12:00 Ubuntu25 CRON[5767]: pam_unix(cron:session): session closed for user root
+2025-07-24T10:35:01.697909+12:00 Ubuntu25 CRON[5781]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T10:35:01.758993+12:00 Ubuntu25 CRON[5781]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:16:26.817404+12:00 Ubuntu25 systemd-logind[5804]: New seat seat0.
+2025-07-24T11:16:27.256478+12:00 Ubuntu25 systemd-logind[5804]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-07-24T11:16:27.256716+12:00 Ubuntu25 systemd-logind[5804]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-07-24T11:16:27.256827+12:00 Ubuntu25 systemd-logind[5804]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-07-24T11:16:27.627195+12:00 Ubuntu25 systemd-logind[5804]: New session 6 of user admin.
+2025-07-24T11:16:27.636001+12:00 Ubuntu25 systemd-logind[5804]: New session c2 of user gdm.
+2025-07-24T11:16:27.771522+12:00 Ubuntu25 systemd-logind[5804]: New session 5 of user admin.
+2025-07-24T11:16:27.772218+12:00 Ubuntu25 systemd-logind[5804]: New session 1 of user gdm.
+2025-07-24T11:16:27.772514+12:00 Ubuntu25 systemd-logind[5804]: New session c1 of user gdm.
+2025-07-24T11:16:28.513557+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-07-24T11:16:28.617498+12:00 Ubuntu25 systemd-logind[5804]: New session c3 of user gdm.
+2025-07-24T11:16:31.075412+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-07-24T11:16:31.139305+12:00 Ubuntu25 systemd-logind[5804]: Session c3 logged out. Waiting for processes to exit.
+2025-07-24T11:16:31.154226+12:00 Ubuntu25 systemd-logind[5804]: Removed session c3.
+2025-07-24T11:16:31.325169+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-07-24T11:16:31.361828+12:00 Ubuntu25 systemd-logind[5804]: New session c4 of user gdm.
+2025-07-24T11:16:32.007559+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-07-24T11:16:32.079797+12:00 Ubuntu25 systemd-logind[5804]: Session c4 logged out. Waiting for processes to exit.
+2025-07-24T11:16:32.104892+12:00 Ubuntu25 systemd-logind[5804]: Removed session c4.
+2025-07-24T11:17:01.540724+12:00 Ubuntu25 CRON[5917]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:17:01.579691+12:00 Ubuntu25 CRON[5917]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:25:01.740540+12:00 Ubuntu25 CRON[5930]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:25:01.838569+12:00 Ubuntu25 CRON[5930]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:30:01.921984+12:00 Ubuntu25 CRON[5945]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:30:02.014200+12:00 Ubuntu25 CRON[5945]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:35:01.066543+12:00 Ubuntu25 CRON[5958]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:35:01.155155+12:00 Ubuntu25 CRON[5958]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:45:01.273410+12:00 Ubuntu25 CRON[5976]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:45:01.346506+12:00 Ubuntu25 CRON[5976]: pam_unix(cron:session): session closed for user root
+2025-07-24T11:55:01.490238+12:00 Ubuntu25 CRON[6290]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T11:55:01.566389+12:00 Ubuntu25 CRON[6290]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:05:01.748517+12:00 Ubuntu25 CRON[6717]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:05:01.839151+12:00 Ubuntu25 CRON[6717]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:15:02.021496+12:00 Ubuntu25 CRON[6736]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:15:02.062532+12:00 Ubuntu25 CRON[6736]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:17:01.102113+12:00 Ubuntu25 CRON[6742]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:17:01.146866+12:00 Ubuntu25 CRON[6742]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:25:01.199506+12:00 Ubuntu25 CRON[6755]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:25:01.240300+12:00 Ubuntu25 CRON[6755]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:30:01.301790+12:00 Ubuntu25 CRON[6760]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:30:01.329134+12:00 Ubuntu25 CRON[6760]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:35:01.362875+12:00 Ubuntu25 CRON[6776]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:35:01.405116+12:00 Ubuntu25 CRON[6776]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:45:01.497159+12:00 Ubuntu25 CRON[6789]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-07-24T12:45:01.567894+12:00 Ubuntu25 CRON[6789]: pam_unix(cron:session): session closed for user root
+2025-07-24T12:51:01.358294+12:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/sbin/shutdown now
+2025-07-24T12:51:01.377851+12:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-07-24T12:51:01.384152+12:00 Ubuntu25 systemd-logind[5804]: The system will power off now!
+2025-07-24T12:51:01.408402+12:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-07-24T12:51:31.565137+12:00 Ubuntu25 systemd-logind[5804]: Delay lock is active (UID 0/root, PID 1694/unattended-upgr) but inhibitor timeout is reached.
+2025-07-24T12:51:31.569216+12:00 Ubuntu25 systemd-logind[5804]: System is powering down.
+2025-07-24T12:51:31.619921+12:00 Ubuntu25 sshd-session[4350]: error: mm_reap: preauth child terminated by signal 15
+2025-07-24T12:51:31.624661+12:00 Ubuntu25 sshd-session[4350]: pam_unix(sshd:session): session closed for user admin
+2025-07-24T12:51:31.640004+12:00 Ubuntu25 sshd-session[4350]: syslogin_perform_logout: logout() returned an error
+2025-07-24T12:51:31.662403+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-07-24T12:51:31.729564+12:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-07-24T12:51:32.016041+12:00 Ubuntu25 polkitd[966]: Unregistered Authentication Agent for unix-session:c2 (system bus name :1.101, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-07-24T12:51:32.062318+12:00 Ubuntu25 polkitd[966]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.36, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-07-24T12:51:32.082537+12:00 Ubuntu25 systemd-logind[5804]: Session 5 logged out. Waiting for processes to exit.
+2025-10-11T10:58:35.474283+13:00 Ubuntu25 systemd-logind[995]: New seat seat0.
+2025-10-11T10:58:35.474292+13:00 Ubuntu25 systemd-logind[995]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-10-11T10:58:35.474299+13:00 Ubuntu25 systemd-logind[995]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-10-11T10:58:35.474307+13:00 Ubuntu25 systemd-logind[995]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-10-11T10:58:38.851126+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T10:58:38.860383+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T10:58:38.861453+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T10:58:38.861532+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T10:58:38.862125+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T10:58:38.862269+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T10:58:40.926743+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T10:58:41.172907+13:00 Ubuntu25 polkitd[966]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-10-11T10:58:57.186925+13:00 Ubuntu25 sshd[1680]: Server listening on 0.0.0.0 port 2222.
+2025-10-11T10:58:57.187244+13:00 Ubuntu25 sshd[1680]: Server listening on :: port 2222.
+2025-10-11T10:59:00.397404+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-10-11T10:59:00.663353+13:00 Ubuntu25 systemd-logind[995]: New session c1 of user gdm.
+2025-10-11T10:59:01.089919+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-10-11T10:59:01.176413+13:00 Ubuntu25 systemd-logind[995]: New session 1 of user gdm.
+2025-10-11T10:59:30.970172+13:00 Ubuntu25 polkitd[966]: Registered Authentication Agent for unix-session:c1 (system bus name :1.36 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-10-11T10:59:45.872341+13:00 Ubuntu25 gnome-keyring-daemon[2502]: The Secret Service was already initialized
+2025-10-11T10:59:45.875164+13:00 Ubuntu25 gnome-keyring-daemon[2501]: discover_other_daemon: 1
+2025-10-11T11:01:49.288611+13:00 Ubuntu25 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-10-11T11:01:49.289431+13:00 Ubuntu25 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-10-11T11:01:49.352160+13:00 Ubuntu25 gdm-password]: pam_unix(gdm-password:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-10-11T11:01:49.369066+13:00 Ubuntu25 systemd-logind[995]: New session 2 of user admin.
+2025-10-11T11:01:49.425135+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-10-11T11:01:49.429244+13:00 Ubuntu25 systemd-logind[995]: New session 3 of user admin.
+2025-10-11T11:01:50.023230+13:00 Ubuntu25 gdm-password]: gkr-pam: unlocked login keyring
+2025-10-11T11:01:51.033997+13:00 Ubuntu25 gnome-keyring-daemon[2573]: The PKCS#11 component was already initialized
+2025-10-11T11:01:51.035630+13:00 Ubuntu25 gnome-keyring-daemon[2801]: discover_other_daemon: 1
+2025-10-11T11:01:51.054626+13:00 Ubuntu25 gnome-keyring-daemon[2573]: The Secret Service was already initialized
+2025-10-11T11:01:51.055280+13:00 Ubuntu25 gnome-keyring-daemon[2806]: discover_other_daemon: 1
+2025-10-11T11:01:51.055643+13:00 Ubuntu25 gnome-keyring-daemon[2807]: discover_other_daemon: 1
+2025-10-11T11:01:54.155033+13:00 Ubuntu25 polkitd[966]: Registered Authentication Agent for unix-session:2 (system bus name :1.80 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-10-11T11:01:55.948529+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-10-11T11:01:55.992530+13:00 Ubuntu25 systemd-logind[995]: Session c1 logged out. Waiting for processes to exit.
+2025-10-11T11:01:56.041764+13:00 Ubuntu25 polkitd[966]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.36, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-10-11T11:01:56.060691+13:00 Ubuntu25 systemd-logind[995]: Removed session c1.
+2025-10-11T11:02:06.495113+13:00 Ubuntu25 (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2025-10-11T11:02:06.496537+13:00 Ubuntu25 systemd-logind[995]: Removed session 1.
+2025-10-11T11:03:18.920598+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt list
+2025-10-11T11:03:18.925218+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:03:37.414062+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:03:45.490838+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt list
+2025-10-11T11:03:45.492912+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:04:15.190463+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:04:27.288994+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt list
+2025-10-11T11:04:27.291934+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:04:34.694063+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:05:01.814947+13:00 Ubuntu25 CRON[3759]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:05:01.832074+13:00 Ubuntu25 CRON[3759]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:05:08.574838+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt update jq python3-pandas auditd sysstat
+2025-10-11T11:05:08.576066+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:05:08.584264+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:05:16.875822+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt upgrade jq python3-pandas auditd sysstat
+2025-10-11T11:05:16.879707+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:05:43.795316+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:05:56.956553+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt-get update
+2025-10-11T11:05:56.958372+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:06:06.370831+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:06:09.362291+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt upgrade jq python3-pandas auditd sysstat
+2025-10-11T11:06:09.365701+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:08:55.810204+13:00 Ubuntu25 pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:08:55.815910+13:00 Ubuntu25 pkexec[3979]: admin: Executing command [USER=root] [TTY=unknown] [CWD=/home/admin] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2025-10-11T11:10:50.264265+13:00 Ubuntu25 dbus-daemon[937]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-10-11T11:11:34.699451+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:34.699687+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:34.699724+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:34.699747+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:34.699769+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.699794+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:34.699887+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.699911+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:34.713881+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:11:34.714058+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:34.714256+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:34.714302+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:34.714325+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:34.714921+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.715011+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:34.715033+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.715050+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:34.726792+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:11:34.726916+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:34.726951+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:34.726976+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:34.726997+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:34.727020+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.727043+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:34.727066+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.727086+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:34.739757+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:11:34.739886+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:34.740010+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:34.740101+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:34.740130+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:34.740151+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.740173+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:34.740195+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:34.740217+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:34.755967+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:11:41.675812+13:00 Ubuntu25 sshd[1680]: Received signal 15; terminating.
+2025-10-11T11:11:58.729375+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:58.731015+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:58.732223+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:58.732312+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:58.732348+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:58.732408+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:58.733965+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:58.734070+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:58.750550+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:11:58.750833+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:11:58.751418+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:11:58.751531+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:11:58.751553+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:11:58.751575+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:58.751598+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:11:58.751621+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:11:58.752016+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:11:58.770738+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:12:03.624758+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:12:03.625735+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:12:03.626310+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:12:03.626373+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:12:03.626398+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:03.626422+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:12:03.626446+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:03.626468+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:12:03.641443+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:12:03.641532+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:12:03.641559+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:12:03.641583+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:12:03.643483+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:12:03.643741+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:03.643905+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:12:03.644422+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:03.645316+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:12:03.649202+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:12:33.282099+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:12:33.282239+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:12:33.282302+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:12:33.282330+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:12:33.282353+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:33.282375+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:12:33.282406+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:33.282426+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:12:33.292885+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:12:33.292959+13:00 Ubuntu25 polkitd[966]: Reloading rules
+2025-10-11T11:12:33.292985+13:00 Ubuntu25 polkitd[966]: Collecting garbage unconditionally...
+2025-10-11T11:12:33.293007+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:12:33.293029+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:12:33.293050+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:33.293073+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:12:33.293095+13:00 Ubuntu25 polkitd[966]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:12:33.293116+13:00 Ubuntu25 polkitd[966]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:12:33.304587+13:00 Ubuntu25 polkitd[966]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:15:01.906152+13:00 Ubuntu25 CRON[13000]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:15:01.931706+13:00 Ubuntu25 CRON[13000]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:17:01.213109+13:00 Ubuntu25 CRON[29641]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:17:01.229934+13:00 Ubuntu25 CRON[29641]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:21:08.033067+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:23:56.763863+13:00 Ubuntu25 pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:23:56.769645+13:00 Ubuntu25 pkexec[52831]: admin: Executing command [USER=root] [TTY=unknown] [CWD=/home/admin] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2025-10-11T11:25:01.043612+13:00 Ubuntu25 CRON[52863]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:25:01.048541+13:00 Ubuntu25 CRON[52863]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:25:47.884004+13:00 Ubuntu25 polkitd[966]: Operator of unix-session:2 successfully authenticated as unix-user:admin to gain TEMPORARY authorization for action org.debian.apt.install-or-remove-packages for system-bus-name::1.148 [/usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map] (owned by unix-user:admin)
+2025-10-11T11:26:13.092388+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt install lynis
+2025-10-11T11:26:13.100417+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:26:14.599929+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:26:30.907555+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt update
+2025-10-11T11:26:30.908574+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:26:33.972692+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:26:43.417786+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/apt upgrade
+2025-10-11T11:26:43.421064+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:26:44.713026+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:26:56.704094+13:00 Ubuntu25 pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:26:56.708612+13:00 Ubuntu25 pkexec[53675]: admin: Executing command [USER=root] [TTY=unknown] [CWD=/home/admin] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2025-10-11T11:26:57.589184+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/sbin/reboot now
+2025-10-11T11:26:57.597145+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:26:57.628265+13:00 Ubuntu25 systemd-logind[995]: The system will reboot now!
+2025-10-11T11:26:57.661240+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:26:57.685399+13:00 Ubuntu25 systemd-logind[995]: System is rebooting.
+2025-10-11T11:26:57.782859+13:00 Ubuntu25 gdm-password]: pam_unix(gdm-password:session): session closed for user admin
+2025-10-11T11:26:58.260716+13:00 Ubuntu25 systemd-logind[995]: Session 2 logged out. Waiting for processes to exit.
+2025-10-11T11:41:31.256212+13:00 Ubuntu25 systemd-logind[1126]: New seat seat0.
+2025-10-11T11:41:31.256214+13:00 Ubuntu25 systemd-logind[1126]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-10-11T11:41:31.256217+13:00 Ubuntu25 systemd-logind[1126]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-10-11T11:41:31.256225+13:00 Ubuntu25 systemd-logind[1126]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-10-11T11:41:31.371083+13:00 Ubuntu25 polkitd[1092]: Loading rules from directory /etc/polkit-1/rules.d
+2025-10-11T11:41:31.371257+13:00 Ubuntu25 polkitd[1092]: Loading rules from directory /run/polkit-1/rules.d
+2025-10-11T11:41:31.371286+13:00 Ubuntu25 polkitd[1092]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:41:31.371310+13:00 Ubuntu25 polkitd[1092]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-10-11T11:41:31.371329+13:00 Ubuntu25 polkitd[1092]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-10-11T11:41:31.371352+13:00 Ubuntu25 polkitd[1092]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-10-11T11:41:31.536142+13:00 Ubuntu25 polkitd[1092]: Finished loading, compiling and executing 18 rules
+2025-10-11T11:41:31.589812+13:00 Ubuntu25 polkitd[1092]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-10-11T11:41:33.505308+13:00 Ubuntu25 sshd[1694]: Server listening on 0.0.0.0 port 2222.
+2025-10-11T11:41:33.505506+13:00 Ubuntu25 sshd[1694]: Server listening on :: port 2222.
+2025-10-11T11:41:33.778072+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-10-11T11:41:33.811746+13:00 Ubuntu25 systemd-logind[1126]: New session c1 of user gdm.
+2025-10-11T11:41:33.881244+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-10-11T11:41:33.885001+13:00 Ubuntu25 systemd-logind[1126]: New session 1 of user gdm.
+2025-10-11T11:41:40.942911+13:00 Ubuntu25 polkitd[1092]: Registered Authentication Agent for unix-session:c1 (system bus name :1.37 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-10-11T11:41:43.903189+13:00 Ubuntu25 gnome-keyring-daemon[2434]: The Secret Service was already initialized
+2025-10-11T11:41:43.903714+13:00 Ubuntu25 gnome-keyring-daemon[2433]: discover_other_daemon: 1
+2025-10-11T11:42:03.376177+13:00 Ubuntu25 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-10-11T11:42:03.376466+13:00 Ubuntu25 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-10-11T11:42:03.416436+13:00 Ubuntu25 gdm-password]: pam_unix(gdm-password:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-10-11T11:42:03.432030+13:00 Ubuntu25 systemd-logind[1126]: New session 2 of user admin.
+2025-10-11T11:42:03.486448+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-10-11T11:42:03.493080+13:00 Ubuntu25 systemd-logind[1126]: New session 3 of user admin.
+2025-10-11T11:42:03.979554+13:00 Ubuntu25 gdm-password]: gkr-pam: unlocked login keyring
+2025-10-11T11:42:04.893613+13:00 Ubuntu25 gnome-keyring-daemon[2474]: The PKCS#11 component was already initialized
+2025-10-11T11:42:04.893981+13:00 Ubuntu25 gnome-keyring-daemon[2698]: discover_other_daemon: 1
+2025-10-11T11:42:04.897466+13:00 Ubuntu25 gnome-keyring-daemon[2474]: The Secret Service was already initialized
+2025-10-11T11:42:04.898023+13:00 Ubuntu25 gnome-keyring-daemon[2702]: discover_other_daemon: 1
+2025-10-11T11:42:04.898041+13:00 Ubuntu25 gnome-keyring-daemon[2699]: discover_other_daemon: 1
+2025-10-11T11:42:08.260986+13:00 Ubuntu25 polkitd[1092]: Registered Authentication Agent for unix-session:2 (system bus name :1.80 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-10-11T11:42:09.678450+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-10-11T11:42:09.721748+13:00 Ubuntu25 systemd-logind[1126]: Session c1 logged out. Waiting for processes to exit.
+2025-10-11T11:42:09.755639+13:00 Ubuntu25 polkitd[1092]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.37, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-10-11T11:42:09.794209+13:00 Ubuntu25 systemd-logind[1126]: Removed session c1.
+2025-10-11T11:42:20.162503+13:00 Ubuntu25 systemd-logind[1126]: Removed session 1.
+2025-10-11T11:45:01.919510+13:00 Ubuntu25 CRON[3636]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:45:01.937192+13:00 Ubuntu25 CRON[3636]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:45:10.635869+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/tail syslog
+2025-10-11T11:45:10.638432+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:45:10.652074+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:45:41.917012+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/tail dmesg
+2025-10-11T11:45:41.918090+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:45:41.922740+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:46:06.009524+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/tail kern.log
+2025-10-11T11:46:06.011531+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:46:06.018683+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:46:28.529177+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/tail auth.log
+2025-10-11T11:46:28.529473+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:46:28.537118+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:49:03.808209+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/tail -n 1000 /var/log/syslog
+2025-10-11T11:49:03.809360+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:49:03.812171+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:49:18.555361+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/cp /etc/ssh/sshd_config baseline_sshd_config.txt
+2025-10-11T11:49:18.555600+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:49:18.566082+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:49:18.618190+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/cp /etc/sysctl.conf baseline_sysctl_conf.txt
+2025-10-11T11:49:18.619708+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:49:18.625870+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:50:36.739194+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/sbin/lynis audit system --quiet --no-colors
+2025-10-11T11:50:36.739991+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:52:27.930668+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:55:01.642425+13:00 Ubuntu25 CRON[50316]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T11:55:01.655951+13:00 Ubuntu25 CRON[50316]: pam_unix(cron:session): session closed for user root
+2025-10-11T11:55:07.039726+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log ./baseline_auth.log
+2025-10-11T11:55:07.041644+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:55:07.049129+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:55:23.825085+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/tail /var/log/auth.log
+2025-10-11T11:55:23.826129+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:55:23.830078+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:55:48.678750+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/tail /var/log/syslog
+2025-10-11T11:55:48.678964+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:55:48.685507+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:56:22.500098+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/grep ssh /var/log/syslog
+2025-10-11T11:56:22.501566+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:56:22.511191+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T11:56:31.562049+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/bin/grep login /var/log/syslog
+2025-10-11T11:56:31.564037+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-10-11T11:56:31.569411+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session closed for user root
+2025-10-11T12:00:56.414763+13:00 Ubuntu25 dbus-daemon[1070]: [system] Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+2025-10-11T12:05:01.715495+13:00 Ubuntu25 CRON[50605]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:05:01.738767+13:00 Ubuntu25 CRON[50605]: pam_unix(cron:session): session closed for user root
+2025-10-11T12:15:01.938780+13:00 Ubuntu25 CRON[50636]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:15:02.018250+13:00 Ubuntu25 CRON[50636]: pam_unix(cron:session): session closed for user root
+2025-10-11T12:17:01.066629+13:00 Ubuntu25 CRON[50642]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:17:01.168124+13:00 Ubuntu25 CRON[50642]: pam_unix(cron:session): session closed for user root
+2025-10-11T12:25:01.243594+13:00 Ubuntu25 CRON[50659]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:25:01.303929+13:00 Ubuntu25 CRON[50659]: pam_unix(cron:session): session closed for user root
+2025-10-11T12:27:48.793117+13:00 Ubuntu25 gdm-password]: gkr-pam: unlocked login keyring
+2025-10-11T12:30:01.357306+13:00 Ubuntu25 CRON[50754]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:30:01.447614+13:00 Ubuntu25 CRON[50754]: pam_unix(cron:session): session closed for user root
+2025-10-11T12:35:01.518918+13:00 Ubuntu25 CRON[50781]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-10-11T12:35:01.565494+13:00 Ubuntu25 CRON[50781]: pam_unix(cron:session): session closed for user root
+2025-10-12T19:58:14.937462+13:00 Ubuntu25 gdm-password]: gkr-pam: unlocked login keyring
+2025-10-12T19:58:28.595632+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): conversation failed
+2025-10-12T19:58:28.601702+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): auth could not identify password for [admin]
+2025-10-12T19:58:46.663964+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): authentication failure; logname=admin uid=1000 euid=0 tty=/dev/pts/0 ruser=admin rhost=  user=admin
+2025-10-12T19:58:59.936110+13:00 Ubuntu25 sudo:    admin : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/sbin/shutdown now
+2025-10-12T19:59:05.907594+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): authentication failure; logname=admin uid=1000 euid=0 tty=/dev/pts/0 ruser=admin rhost=  user=admin
+2025-10-12T19:59:08.532148+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): conversation failed
+2025-10-12T19:59:08.532642+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): auth could not identify password for [admin]
+2025-10-12T19:59:08.535978+13:00 Ubuntu25 sudo:    admin : 1 incorrect password attempt ; TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/sbin/shutdown now
+2025-10-12T19:59:23.871543+13:00 Ubuntu25 sudo: pam_unix(sudo:auth): authentication failure; logname=admin uid=1000 euid=0 tty=/dev/pts/0 ruser=admin rhost=  user=admin
+2025-10-12T19:59:40.982787+13:00 Ubuntu25 sudo:    admin : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/admin/COMP903/synthetic_data/baseline ; USER=root ; COMMAND=/usr/sbin/shutdown now
+2025-10-12T19:59:49.972808+13:00 Ubuntu25 systemd-logind[1126]: The system will power off now!
+2025-10-12T19:59:50.097239+13:00 Ubuntu25 systemd-logind[1126]: System is powering down.
+2025-10-12T19:59:50.245931+13:00 Ubuntu25 gdm-password]: pam_unix(gdm-password:session): session closed for user admin
+2025-10-12T19:59:51.773736+13:00 Ubuntu25 systemd-logind[1126]: Session 2 logged out. Waiting for processes to exit.
+2025-10-12T19:59:51.775551+13:00 Ubuntu25 systemd-logind[1126]: Removed session 2.
+2025-11-07T09:26:44.191927+13:00 Ubuntu25 systemd-logind[936]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-11-07T09:26:44.191938+13:00 Ubuntu25 systemd-logind[936]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-11-07T09:26:44.191952+13:00 Ubuntu25 systemd-logind[936]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-11-07T09:26:44.191961+13:00 Ubuntu25 systemd-logind[936]: New seat seat0.
+2025-11-07T09:26:44.914334+13:00 Ubuntu25 polkitd[899]: Loading rules from directory /etc/polkit-1/rules.d
+2025-11-07T09:26:44.937934+13:00 Ubuntu25 polkitd[899]: Loading rules from directory /run/polkit-1/rules.d
+2025-11-07T09:26:44.938619+13:00 Ubuntu25 polkitd[899]: Error opening rules directory: Error opening directory “/run/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-11-07T09:26:44.938689+13:00 Ubuntu25 polkitd[899]: Loading rules from directory /usr/local/share/polkit-1/rules.d
+2025-11-07T09:26:44.938768+13:00 Ubuntu25 polkitd[899]: Error opening rules directory: Error opening directory “/usr/local/share/polkit-1/rules.d”: No such file or directory (g-file-error-quark, 4)
+2025-11-07T09:26:44.938804+13:00 Ubuntu25 polkitd[899]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-11-07T09:26:46.246096+13:00 Ubuntu25 polkitd[899]: Finished loading, compiling and executing 18 rules
+2025-11-07T09:26:46.285771+13:00 Ubuntu25 polkitd[899]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-11-07T09:27:01.279807+13:00 Ubuntu25 sshd[1657]: Server listening on 0.0.0.0 port 2222.
+2025-11-07T09:27:01.282371+13:00 Ubuntu25 sshd[1657]: Server listening on :: port 2222.
+2025-11-07T09:27:02.913507+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-11-07T09:27:03.016015+13:00 Ubuntu25 systemd-logind[936]: New session c1 of user gdm.
+2025-11-07T09:27:03.289160+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=119) by gdm(uid=0)
+2025-11-07T09:27:03.322785+13:00 Ubuntu25 systemd-logind[936]: New session 1 of user gdm.
+2025-11-07T09:27:46.272864+13:00 Ubuntu25 polkitd[899]: Registered Authentication Agent for unix-session:c1 (system bus name :1.36 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-11-07T09:28:07.915984+13:00 Ubuntu25 gnome-keyring-daemon[2750]: The Secret Service was already initialized
+2025-11-07T09:28:07.917927+13:00 Ubuntu25 gnome-keyring-daemon[2749]: discover_other_daemon: 1
+2025-11-07T09:30:01.527563+13:00 Ubuntu25 CRON[2789]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-11-07T09:30:01.543489+13:00 Ubuntu25 CRON[2789]: pam_unix(cron:session): session closed for user root
+2025-11-07T09:51:56.704036+13:00 Ubuntu25 systemd-logind[2933]: New seat seat0.
+2025-11-07T09:51:56.783941+13:00 Ubuntu25 systemd-logind[2933]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-11-07T09:51:56.794432+13:00 Ubuntu25 systemd-logind[2933]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-11-07T09:51:56.808731+13:00 Ubuntu25 systemd-logind[2933]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-11-07T09:51:56.885237+13:00 Ubuntu25 systemd-logind[2933]: New session 1 of user gdm.
+2025-11-07T09:51:56.911321+13:00 Ubuntu25 systemd-logind[2933]: New session c1 of user gdm.
+2025-11-07T09:51:57.281292+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=119) by (uid=0)
+2025-11-07T09:51:57.303636+13:00 Ubuntu25 systemd-logind[2933]: New session c2 of user gdm.
+2025-11-07T09:52:02.642866+13:00 Ubuntu25 polkitd[899]: Registered Authentication Agent for unix-session:c2 (system bus name :1.79 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-11-07T09:52:09.731898+13:00 Ubuntu25 gnome-keyring-daemon[2750]: The Secret Service was already initialized
+2025-11-07T09:52:09.735316+13:00 Ubuntu25 gnome-keyring-daemon[3387]: discover_other_daemon: 1
+2025-11-07T09:52:38.372220+13:00 Ubuntu25 gdm-password]: gkr-pam: unable to locate daemon control file
+2025-11-07T09:52:38.372509+13:00 Ubuntu25 gdm-password]: gkr-pam: stashed password to try later in open session
+2025-11-07T09:52:38.403102+13:00 Ubuntu25 gdm-password]: pam_unix(gdm-password:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-11-07T09:52:38.432991+13:00 Ubuntu25 systemd-logind[2933]: New session 3 of user admin.
+2025-11-07T09:52:38.517468+13:00 Ubuntu25 (systemd): pam_unix(systemd-user:session): session opened for user admin(uid=1000) by admin(uid=0)
+2025-11-07T09:52:38.525129+13:00 Ubuntu25 systemd-logind[2933]: New session 4 of user admin.
+2025-11-07T09:52:39.456006+13:00 Ubuntu25 gdm-password]: gkr-pam: unlocked login keyring
+2025-11-07T09:52:41.135579+13:00 Ubuntu25 gnome-keyring-daemon[3684]: discover_other_daemon: 1
+2025-11-07T09:52:41.142721+13:00 Ubuntu25 gnome-keyring-daemon[3444]: The Secret Service was already initialized
+2025-11-07T09:52:41.144189+13:00 Ubuntu25 gnome-keyring-daemon[3444]: The PKCS#11 component was already initialized
+2025-11-07T09:52:41.144328+13:00 Ubuntu25 gnome-keyring-daemon[3695]: discover_other_daemon: 1
+2025-11-07T09:52:41.144446+13:00 Ubuntu25 gnome-keyring-daemon[3697]: discover_other_daemon: 1
+2025-11-07T09:52:44.588992+13:00 Ubuntu25 polkitd[899]: Registered Authentication Agent for unix-session:3 (system bus name :1.115 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2025-11-07T09:52:46.268954+13:00 Ubuntu25 gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2025-11-07T09:52:46.336173+13:00 Ubuntu25 systemd-logind[2933]: Session c2 logged out. Waiting for processes to exit.
+2025-11-07T09:52:46.456110+13:00 Ubuntu25 polkitd[899]: Unregistered Authentication Agent for unix-session:c2 (system bus name :1.79, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2025-11-07T09:52:46.467651+13:00 Ubuntu25 systemd-logind[2933]: Removed session c2.
+2025-11-07T09:53:46.379010+13:00 Ubuntu25 pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by admin(uid=1000)
+2025-11-07T09:53:46.382273+13:00 Ubuntu25 pkexec[4567]: admin: Executing command [USER=root] [TTY=unknown] [CWD=/home/admin] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2025-11-07T09:54:23.046915+13:00 Ubuntu25 sudo:    admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /shared/auth.log.COMP902VM
+2025-11-07T09:54:23.052233+13:00 Ubuntu25 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by admin(uid=1000)

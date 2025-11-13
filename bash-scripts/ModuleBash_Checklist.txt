@@ -192,3 +192,10 @@ sudo sysctl -a | grep -E "tcp_syncookies|rp_filter|accept_source_route|accept_re
 	# Note: kernel.modules_disabled = 1 is not applied to preserve functionality
 
 # For auditd module
+# [ ] Check if the backup file is created:
+# [ ] Check if auditd system module is running:
+sudo systemctl status auditd
+# [ ] Check the loaded audit rules
+sudo auditctl -l
+# [ ] Check if the audit rules file exists:
+ls -l /etc/audit/rules.d/hardening.rules
