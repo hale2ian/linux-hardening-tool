@@ -5,6 +5,7 @@
 # Description: Calls the COMP903 ML detector to analyse logs and writes a report.
 
 set -e
+set -o pipefail
 
 # Determine correct user home directory (same pattern as other modules)
 if [ "$SUDO_USER" ]; then
@@ -13,7 +14,7 @@ else
     USER_HOME="$HOME"
 fi
 
-TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+  TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 BASE_DIR="$USER_HOME/linux-hardening-tool"
 LOG_DIR="$BASE_DIR/logs"
 REPORT_DIR="$BASE_DIR/reports"
@@ -24,7 +25,7 @@ REPORT_FILE="$REPORT_DIR/ml_anomaly_report_${TIMESTAMP}.txt"
 
 echo "=== ML Anomaly Detection Started at $(date) ===" | tee -a "$LOG_FILE"
 
-# Path to your COMP903 project and virtualenv
+# Path to COMP903 project and virtualenv directory
 COMP903_DIR="$USER_HOME/COMP903"
 VENV_DIR="$COMP903_DIR/mlencode-env"
 ML_SCRIPT="$COMP903_DIR/ml_detect_cli.py"
@@ -83,6 +84,10 @@ echo "[*] Activating virtualenv: $VENV_DIR" | tee -a "$LOG_FILE"
 source "$VENV_DIR/bin/activate"
 
 echo "[*] Running ML detector..." | tee -a "$LOG_FILE"
+
+# Change to COMP903 directory so relative paths (models/...) resolve correctly
+cd "$COMP903_DIR"
+
 python "$ML_SCRIPT" \
     --input "$ENCODED_DATASET" \
     --output "$REPORT_FILE" \
@@ -92,12 +97,21 @@ DETECT_EXIT=$?
 
 deactivate
 
+# Go back to the base dir (optional, but tidy)
+cd "$BASE_DIR"
+
 if [ $DETECT_EXIT -ne 0 ]; then
     echo "[!] ML detection script exited with status $DETECT_EXIT" | tee -a "$LOG_FILE"
     exit $DETECT_EXIT
+fi
+
+if [ ! -f "$REPORT_FILE" ]; then
+    echo "[!] ML detection did not produce report file: $REPORT_FILE" | tee -a "$LOG_FILE"
+    exit 1
 fi
 
 echo "[*] ML anomaly report saved to: $REPORT_FILE" | tee -a "$LOG_FILE"
 echo "=== ML Anomaly Detection Completed at $(date) ===" | tee -a "$LOG_FILE"
 
 exit 0
+EOF
