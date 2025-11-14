@@ -50,12 +50,12 @@ fi
 # For now we try several in order of preference.
 
 POSSIBLE_DATASETS=(
-  "$COMP903_DIR/encoded_logs_COMP903DEVUBUNTUVM.csv"
-  "$COMP903_DIR/encoded_logs_COMP902UBUNTUVM.csv"
-  "$COMP903_DIR/encoded_logs_COMP902CENTOSVM.csv"
-  "$COMP903_DIR/encoded_logs_COMP902OPENSUSEVM.csv"
-  "$COMP903_DIR/encoded_logs_Linux2k.csv"
-  "$COMP903_DIR/encoded_logs_Linux25k.csv"
+  "$COMP903_DIR/datasets/encoded_logs_COMP903DEVUBUNTUVM.csv"
+  "$COMP903_DIR/datasets/encoded_logs_COMP902UBUNTUVM.csv"
+  "$COMP903_DIR/datasets/encoded_logs_COMP902CENTOSVM.csv"
+  "$COMP903_DIR/datasets/encoded_logs_COMP902OPENSUSEVM.csv"
+  "$COMP903_DIR/datasets/encoded_logs_Linux2k.csv"
+  "$COMP903_DIR/datasets/encoded_logs_Linux25k.csv"
 )
 
 ENCODED_DATASET=""
