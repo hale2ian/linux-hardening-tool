@@ -44,22 +44,45 @@ if [ ! -f "$ML_SCRIPT" ]; then
     exit 1
 fi
 
+# Choose which encoded dataset to analyse on this machine
+# For your dev VM you might use encoded_logs_COMP903DEVUBUNTUVM.csv
+# For COMP902 Ubuntu VM: encoded_logs_COMP902UBUNTUVM.csv, etc.
+# For now we try several in order of preference.
+
+POSSIBLE_DATASETS=(
+  "$COMP903_DIR/encoded_logs_COMP903DEVUBUNTUVM.csv"
+  "$COMP903_DIR/encoded_logs_COMP902UBUNTUVM.csv"
+  "$COMP903_DIR/encoded_logs_COMP902CENTOSVM.csv"
+  "$COMP903_DIR/encoded_logs_COMP902OPENSUSEVM.csv"
+  "$COMP903_DIR/encoded_logs_Linux2k.csv"
+  "$COMP903_DIR/encoded_logs_Linux25k.csv"
+)
+
+ENCODED_DATASET=""
+
+for ds in "${POSSIBLE_DATASETS[@]}"; do
+    if [ -f "$ds" ]; then
+        ENCODED_DATASET="$ds"
+        break
+    fi
+done
+
+if [ -z "$ENCODED_DATASET" ]; then
+    echo "[!] No encoded dataset found in COMP903 directory." | tee -a "$LOG_FILE"
+    echo "[!] Checked:" | tee -a "$LOG_FILE"
+    for ds in "${POSSIBLE_DATASETS[@]}"; do
+        echo "    - $ds" | tee -a "$LOG_FILE"
+    done
+    exit 1
+fi
+
+echo "[*] Using encoded dataset: $ENCODED_DATASET" | tee -a "$LOG_FILE"
+
 echo "[*] Activating virtualenv: $VENV_DIR" | tee -a "$LOG_FILE"
 # shellcheck disable=SC1090
 source "$VENV_DIR/bin/activate"
 
-# Example: analyse a fixed encoded dataset (you can change this later to real live logs)
-ENCODED_DATASET="$COMP903_DIR/data/encoded_logs_Linux2kstructured.csv"
-
-if [ ! -f "$ENCODED_DATASET" ]; then
-    echo "[!] Encoded dataset not found at $ENCODED_DATASET" | tee -a "$LOG_FILE"
-    echo "[!] Please update ENCODED_DATASET path in ml_anomaly_scan.sh" | tee -a "$LOG_FILE"
-    deactivate
-    exit 1
-fi
-
-echo "[*] Running ML detector on $ENCODED_DATASET ..." | tee -a "$LOG_FILE"
-
+echo "[*] Running ML detector..." | tee -a "$LOG_FILE"
 python "$ML_SCRIPT" \
     --input "$ENCODED_DATASET" \
     --output "$REPORT_FILE" \
